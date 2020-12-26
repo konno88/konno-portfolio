@@ -1,0 +1,157 @@
+.profile {
+    min-height: 100vh;
+
+    &_title {
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-bottom: 2px solid black;
+        }
+    }
+
+    &_detail {
+        display: flex;
+
+        &_myinfo {
+            width: 40%;
+            height: 100vh;
+            border-right: 2px solid ;
+            padding-right: 5px;
+            background-color: #ffa;
+
+            &_face img {
+                width: 100%;
+                height: 300px;
+            }
+
+            &_name {
+                p {
+                    margin-top: 0;
+                    margin-bottom: 7px;
+                    margin-left: 5px;
+                    font-size: 20px;
+                    font-family: 'Tsukushi A Round Gothic';
+                    border-bottom: 3px dotted #ff9393;
+                }
+    
+                i.fas.fa-user-alt::before {
+                    margin-left: 5px;
+                    color: skyblue;
+                }
+            }
+
+            &_school {
+                p {
+                    margin-top: 0;
+                    margin-bottom: 7px;
+                    margin-left: 5px;
+                    font-size: 20px;
+                    font-family: 'Tsukushi A Round Gothic';
+                    border-bottom: 3px dotted #ff9393;
+                }
+    
+                i.fas.fa-school::before {
+                    color: grey;
+                }
+            }
+
+            &_birthday {
+                p {
+                    margin-top: 0;
+                    margin-bottom: 7px;
+                    margin-left: 5px;
+                    font-size: 20px;
+                    font-family: 'Tsukushi A Round Gothic';
+                    border-bottom: 3px dotted #ff9393;
+                }
+    
+                i.fas.fa-birthday-cake::before {
+                    color: indianred;
+                }
+            }
+    
+            &_birthplace {
+                p {
+                    margin-top: 0;
+                    margin-bottom: 7px;
+                    margin-left: 5px;
+                    font-size: 20px;
+                    font-family: 'Tsukushi A Round Gothic';
+                    border-bottom: 3px dotted #ff9393;
+                }
+    
+                i.fas.fa-leaf::before {
+                    color: limegreen;
+                }
+            }
+        }
+
+        &_info {
+            width: 100%;
+            min-height: 100vh;
+
+            &_education {
+                margin-top: -20px;
+                height: 50%;
+                background-color: lightblue;
+                &_title {
+
+                    h2 {
+                        text-align: center;
+                        font-family: 'Bangers', cursive;
+                        color: wheat;
+                    }
+                }
+
+                &_info {
+                    
+                    p {
+                        text-align: center;
+                        border-bottom: 3px dotted #ff9393;
+                    }
+                }
+            }
+
+            &_skill {
+                margin-top: -20px;
+                background-color: mediumpurple;
+                height: 50%;
+
+                h2 {
+                    text-align: center;
+                    font-family: 'Bangers', cursive;
+                    color: lightsalmon;
+                }
+
+                &_info {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: 25%;
+
+                    &_html {
+                        width: 50%;
+                    }
+
+                    &_css {
+                        width: 50%;
+                    }
+
+                    &_javascript {
+                        width: 50%;
+                    }
+
+                    &_ruby {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+::before {
+    display: block;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+

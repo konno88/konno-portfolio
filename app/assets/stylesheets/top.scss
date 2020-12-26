@@ -1,0 +1,26 @@
+.top {
+    background-image: image-url('Portfolio-piano.png');
+    background-size: cover;
+    min-height: 100vh;
+
+    &_message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
+
+        h2 {
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: whitesmoke;
+        }
+
+        p {
+            font-size: 17px;
+            text-align: center;
+            color: whitesmoke;
+        }
+    }
+}
+

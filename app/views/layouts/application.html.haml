@@ -1,0 +1,62 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title KonnoPortfolio
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta{:content => "width-device-width, initial-scale=1.0", :name => "viewport"}/
+    %link{:href => "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+    %script{:crossorigin => "anonymous", :src => "https://kit.fontawesome.com/abaca9e9d6.js"}
+  %body
+    .top
+      .top_image
+      .top_message
+        %h2 GO-CHANNEL
+        %p 楽器で人と人を繋ぐ
+    .profile
+      .profile_title
+        %h1 Profile
+      .profile_detail
+        .profile_detail_myinfo
+          .profile_detail_myinfo_face
+            = image_tag 'face.png'
+          .profile_detail_myinfo_name
+            %i.fas.fa-user-alt 
+            %p 今野郷　-konnno go-
+          .profile_detail_myinfo_school
+            %i.fas.fa-school 
+            %p 秋田大学　理工学部　物質科学科
+          .profile_detail_myinfo_birthday
+            %i.fas.fa-birthday-cake 
+            %p 1998 06 08
+          .profile_detail_myinfo_birthplace 
+            %i.fas.fa-leaf 
+            %p 岩手県　大船渡市
+        .profile_detail_info
+          .profile_detail_info_education
+            .profile_detail_info_education_title
+              %h2 Education
+            .profile_detail_info_education_info
+              %p 2014 : 岩手県立大船渡高等学校入学
+              %p 2017 : 岩手県立大船渡高等学校卒業
+              %p 2017 : 秋田大学入学
+          .profile_detail_info_skill
+            .profile_detail_info_skill_title
+              %h2 Skills
+            .profile_detail_info_skill_info
+              .profile_detail_info_skill_info_html
+                = image_tag 'html5.png'
+                %p HTML5
+              .profile_detail_info_skill_info_css
+                = image_tag 'css3.png'
+                %p CSS
+              .profile_detail_info_skill_info_javascript
+                = image_tag 'javascript_1.png'
+                %p JavaScript
+              .profile_detail_info_skill_info_ruby
+                = image_tag 'ruby.png'
+                %p Ruby on Rails
+    = yield
