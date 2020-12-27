@@ -1,3 +1,5 @@
+@import 'common';
+
 .profile {
     min-height: 100vh;
 
@@ -19,6 +21,12 @@
             padding-right: 5px;
             background-color: #ffa;
 
+            &_title {
+                text-align: center;
+                font-family: 'Bangers', cursive;
+                color: rgb(216, 112, 128);
+            }
+
             &_face img {
                 width: 100%;
                 height: 300px;
@@ -30,7 +38,7 @@
                     margin-bottom: 7px;
                     margin-left: 5px;
                     font-size: 20px;
-                    font-family: 'Tsukushi A Round Gothic';
+                    font-family: $text-base-font;
                     border-bottom: 3px dotted #ff9393;
                 }
     
@@ -46,7 +54,7 @@
                     margin-bottom: 7px;
                     margin-left: 5px;
                     font-size: 20px;
-                    font-family: 'Tsukushi A Round Gothic';
+                    font-family: $text-base-font;
                     border-bottom: 3px dotted #ff9393;
                 }
     
@@ -61,7 +69,7 @@
                     margin-bottom: 7px;
                     margin-left: 5px;
                     font-size: 20px;
-                    font-family: 'Tsukushi A Round Gothic';
+                    font-family: $text-base-font;
                     border-bottom: 3px dotted #ff9393;
                 }
     
@@ -76,12 +84,23 @@
                     margin-bottom: 7px;
                     margin-left: 5px;
                     font-size: 20px;
-                    font-family: 'Tsukushi A Round Gothic';
+                    font-family: $text-base-font;
                     border-bottom: 3px dotted #ff9393;
                 }
     
                 i.fas.fa-leaf::before {
                     color: limegreen;
+                }
+            }
+
+            &_github {
+                text-align: center;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: royalblue;
+                    margin-top: 18px;
                 }
             }
         }
@@ -108,6 +127,7 @@
                     p {
                         text-align: center;
                         border-bottom: 3px dotted #ff9393;
+                        font-family: $text-base-font;
                     }
                 }
             }
@@ -125,23 +145,79 @@
 
                 &_info {
                     display: flex;
+                    justify-content: space-evenly;
                     flex-wrap: wrap;
-                    margin-left: 25%;
 
                     &_html {
-                        width: 50%;
+                        width: 33.3%;
+
+                        p {
+                            color: white;
+                            font-family: $text-base-font;
+                            text-align: center;
+                        }
+
+                        &_img {
+                            text-align: center;
+                        }
                     }
 
                     &_css {
-                        width: 50%;
+                        width: 33.3%;
+
+                        p {
+                            color: white;
+                            font-family: $text-base-font;
+                            text-align: center;
+                        }
+
+                        &_img {
+                            text-align: center;
+                        }
                     }
 
                     &_javascript {
-                        width: 50%;
+                        width: 33.3%;
+
+                        p {
+                            color: white;
+                            font-family: $text-base-font;
+                            text-align: center;
+                        }
+
+                        &_img {
+                            text-align: center;
+                        }
                     }
 
                     &_ruby {
                         width: 50%;
+                        margin-top: 45px;
+
+                        p {
+                            color: white;
+                            font-family: $text-base-font;
+                            text-align: center;
+                        }
+
+                        &_img {
+                            text-align: center;
+                        }
+                    }
+
+                    &_aws {
+                        width: 50%;
+                        margin-top: 45px;
+
+                        p {
+                            color: white;
+                            font-family: $text-base-font;
+                            text-align: center;
+                        }
+
+                        &_img {
+                            text-align: center;
+                        }
                     }
                 }
             }

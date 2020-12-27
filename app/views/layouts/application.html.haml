@@ -23,6 +23,8 @@
         .profile_detail_myinfo
           .profile_detail_myinfo_face
             = image_tag 'face.png'
+          .profile_detail_myinfo_title
+            %h2 Self-introduction
           .profile_detail_myinfo_name
             %i.fas.fa-user-alt 
             %p 今野郷　-konnno go-
@@ -35,6 +37,8 @@
           .profile_detail_myinfo_birthplace 
             %i.fas.fa-leaf 
             %p 岩手県　大船渡市
+          .profile_detail_myinfo_github
+            = link_to "https://github.com/konno88/blogapp-konnon", "https://github.com/konno88/blogapp-konnon"
         .profile_detail_info
           .profile_detail_info_education
             .profile_detail_info_education_title
@@ -48,15 +52,49 @@
               %h2 Skills
             .profile_detail_info_skill_info
               .profile_detail_info_skill_info_html
-                = image_tag 'html5.png'
+                .profile_detail_info_skill_info_html_img
+                  = image_tag 'html5.png'
                 %p HTML5
               .profile_detail_info_skill_info_css
-                = image_tag 'css3.png'
+                .profile_detail_info_skill_info_css_img
+                  = image_tag 'css3.png'
                 %p CSS
               .profile_detail_info_skill_info_javascript
-                = image_tag 'javascript_1.png'
+                .profile_detail_info_skill_info_javascript_img
+                  = image_tag 'javascript_1.png'
                 %p JavaScript
               .profile_detail_info_skill_info_ruby
-                = image_tag 'ruby.png'
+                .profile_detail_info_skill_info_ruby_img
+                  = image_tag 'ruby.png'
                 %p Ruby on Rails
+              .profile_detail_info_skill_info_aws
+                .profile_detail_info_skill_info_aws_img
+                  = image_tag 'aws.png'
+                %p AWS
+    .concept
+      .concept_title
+        %h2 Concept
+      .concept_detail
+        .concept_detail_explanation 
+          %h3 楽器を通して繋がりを広げる
+          %p 楽器を弾いてるけど周りに語れる人がいない...。そう思っている人はいませんか？
+          %p このアプリはそういった思いのある人同士の繋がりを
+          %p サポートするマッチングアプリです。
+        .concept_detail_use
+          .concept_detail_use_search
+            %p ユーザー検索
+            %p.explanation ※趣味の合う人を見つけよう
+            = image_tag 'user-search-explanation.png'
+          .concept_detail_use_chat
+            %p フォロー＆チャット
+            %p.explanation ※相互フォローが完了するとチャットボタンが出て、チャットができるようになるよ
+            = image_tag 'chat-explanation.png'
+          .concept_detail_use_groupsearch
+            %p グループ作成＆検索
+            %p.explanation ※グループを作成したり、気になるグループを見つけて参加しよう
+            = image_tag 'group-search-explanation.png'
+          .concept_detail_use_groupchat
+            %p グループチャット
+            %p.explanation ※色んな人と会話し、繋がりの幅を広げよう
+            = image_tag 'group-chat-explanation.png'
     = yield
