@@ -1,0 +1,108 @@
+@import 'common';
+
+.concept {
+    min-height: 100vh;
+
+    &_title {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-bottom: 2px solid black;
+    }
+
+    &_detail {
+
+        &_explanation {
+            height: 40vh;
+            background-color: palevioletred;
+
+            h3 {
+                font-family: $text-base-font;
+                padding-top: 52px;
+                margin-bottom:20px;
+                font-size: 30px;
+                color: white;
+                text-shadow: #fc0 1px 0 10px;
+                text-align: center;
+            }
+
+            p {
+                color: white;
+                text-align: center;
+                font-family: $text-base-font;
+            }
+        }
+
+        &_use {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background-color: skyblue;
+
+            &_search {
+                width: 25%;
+                text-align: center;
+
+                p {
+                    font-family: $text-base-font;
+                }
+
+                img {
+                    width: 75%;
+                    height: 77%;
+                    margin-top: 28px;
+                }
+            }
+
+            &_chat {
+                width: 25%;
+                text-align: center;
+
+                p {
+                    font-family: $text-base-font;
+                }
+
+                img {
+                    width: 75%;
+                    height: 77%;
+                    margin-top: 10px;
+                }
+            }
+
+            &_groupsearch {
+                width: 25%;
+                text-align: center;
+
+                p {
+                    font-family: $text-base-font;
+                }
+
+                img {
+                    width: 75%;
+                    height: 77%;
+                    margin-top: 10px;
+                }
+            }
+
+            &_groupchat {
+                width: 25%;
+                text-align: center;
+
+                p {
+                    font-family: $text-base-font;
+                }
+
+                img {
+                    width: 75%;
+                    height: 77%;
+                    margin-top: 28px;
+                }
+            }
+        }
+    }
+}
+
+.explanation {
+    color: white;
+    font-size: 12px;
+    width: 75%;
+    margin: 0 auto;
+}
