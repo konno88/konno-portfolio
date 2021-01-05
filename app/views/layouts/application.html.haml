@@ -97,4 +97,36 @@
             %p グループチャット
             %p.explanation ※色んな人と会話し、繋がりの幅を広げよう
             = image_tag 'group-chat-explanation.png'
+      .about
+        .about_title
+          %h2 About
+        .about_detail
+          .about_detail_item1
+            .about_detail_item1_skill
+              .about_detail_item1_skill_title
+                %p Skill set
+              .about_detail_item1_skill_image
+              .about_detail_item1_skill_info
+            .about_detail_item1_time
+              .about_detail_item1_time_title
+                %p Creation time
+              .about_detail_item1_time_image
+              .about_detail_item1_time_info
+          .about_detail_item2
+            .about_detail_item2_title
+              %p About
+              %p Go_channel
+            .about_detail_item2_image
+              = image_tag 'about.png'
+          .about_detail_item3
+            .about_detail_item3_people
+              .about_detail_item3_people_title
+                %p Number of people
+              .about_detail_item3_people_image
+              .about_detail_item3_people_info
+            .about_detail_item3_info
+              .about_detail_item3_info_title
+                %p Public information
+              .about_detail_item3_info_image
+              .about_detail_item3_info_info
     = yield
