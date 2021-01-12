@@ -36,6 +36,25 @@
                         color: white;
                     }
                 }
+
+                &_image {
+                    text-align: center;
+                    margin-top: 30px;
+
+                    i {
+                        color: deepskyblue;
+                    }
+                }
+
+                &_info {
+                    text-align: center;
+                    margin-top: 30px;
+
+                    p {
+                        color:slategrey;
+                        font-family: $text-base-font;
+                    }
+                }
             }
 
             &_time {
@@ -53,6 +72,25 @@
                         font-weight: bold;
                         font-family: $text-base-font;
                         color: white;
+                    }
+                }
+
+                &_image {
+                    text-align: center;
+                    margin-top: 30px;
+
+                    i {
+                        color: orange;
+                    }
+                }
+
+                &_info {
+                    text-align: center;
+                    margin-top: 30px;
+
+                    p {
+                        color: slategrey;
+                        font-family: $text-base-font;
                     }
                 }
             }
@@ -118,6 +156,25 @@
                         color: white;
                     }
                 }
+
+                &_image {
+                    text-align: center;
+                    margin-top: 30px;
+
+                    i {
+                        color: tomato;
+                    }
+                }
+
+                &_info {
+                    text-align: center;
+                    margin-top: 30px;
+
+                    p {
+                        color: slategrey;
+                        font-family: $text-base-font;
+                    }
+                }
             }
 
             &_info {
@@ -135,6 +192,21 @@
                         font-weight: bold;
                         font-family: $text-base-font;
                         color: white;
+                    }
+                }
+
+                &_image {
+                    text-align: center;
+                    margin-top: 30px;
+                }
+
+                &_info {
+                    text-align: center;
+                    margin-top: 30px;
+
+                    a {
+                        text-decoration: none;
+                        color: steelblue;
                     }
                 }
             }
