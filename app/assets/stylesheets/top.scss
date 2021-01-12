@@ -3,6 +3,52 @@
     background-size: cover;
     min-height: 100vh;
 
+    &_header {
+
+        &_content {
+            height: 65vh;
+
+            &_index {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                display: inline-block;
+
+                &_menu {
+                    position: fixed;
+                    top: 0;
+                    right: -100vw;
+                    width: 250px;
+                    height: 100%;
+                    cursor: pointer;
+                    -webkit-transition: 0.53s transform;
+                            transition: 0.53s transform;
+                    -webkit-transition-timing-function: cubic-bezier(.38,.52,.23,.99);
+                            transition-timing-function: cubic-bezier(.38,.52,.23,.99);
+                    background-color: black;
+                    opacity: 0.8;
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            display: block;
+                            padding: 20px;
+                            text-decoration: none;
+                            color: #ffffff;
+                            border-bottom: 1px solid #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     &_message {
         position: absolute;
         top: 50%;
@@ -22,5 +68,58 @@
             color: whitesmoke;
         }
     }
+}
+
+label:before, label:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header_toggle {
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+
+#header_toggle:checked ~ .top_header_content_index_menu {
+	-webkit-transform: translateX(-100vw);
+	        transform: translateX(-100vw);
+}
+
+#header_toggle ~ label {
+	display: block;
+	padding: 0.5em;
+	cursor: pointer;
+	-webkit-transition: 0.5s transform;
+	        transition: 0.5s transform;
+	-webkit-transition-timing-function: cubic-bezier(.61,-0.38,.37,1.27);
+	        transition-timing-function: cubic-bezier(.61,-0.38,.37,1.27);
+	text-align: center;
+	color: #333333;
+}
+
+#header_toggle:checked ~ label {
+	-webkit-transform: translateX(-250px);
+	        transform: translateX(-250px);
+}
+
+#header_toggle ~ label::before {
+	font-family: 'FontAwesome';
+	content: '\f0c9';
+	font-size: 2em
+}
+
+#header_toggle:checked ~ label::before {
+	content: '\f00d';
 }
 

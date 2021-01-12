@@ -12,17 +12,32 @@
     %script{:crossorigin => "anonymous", :src => "https://kit.fontawesome.com/abaca9e9d6.js"}
   %body
     .top
-      .top_image
+      .top_header#top
+        .top_header_content
+          .top_header_content_index
+            %input#header_toggle{:type => "checkbox"}/
+            %label{:for => "header_toggle"}
+              %span
+            .top_header_content_index_menu
+              %ul
+                %li
+                  %a{:href => "#top"} トップページ
+                %li
+                  %a{:href => "#profile"} プロフィール
+                %li
+                  %a{:href => "#concept"} 作品紹介
+                %li
+                  %a{:href => "#about"} 詳細
       .top_message
         %h2 GO-CHANNEL
         %p 楽器で人と人を繋ぐ
     .profile
-      .profile_title
+      .profile_title#profile
         %h1 Profile
       .profile_detail
         .profile_detail_myinfo
           .profile_detail_myinfo_face
-            = image_tag 'face.png'
+            = image_tag 'profile-face.png'
           .profile_detail_myinfo_title
             %h2 Self-introduction
           .profile_detail_myinfo_name
@@ -72,7 +87,7 @@
                   = image_tag 'aws.png'
                 %p AWS
     .concept
-      .concept_title
+      .concept_title#concept
         %h2 Concept
       .concept_detail
         .concept_detail_explanation 
@@ -98,7 +113,7 @@
             %p.explanation ※色んな人と会話し、繋がりの幅を広げよう
             = image_tag 'group-chat-explanation.png'
       .about
-        .about_title
+        .about_title#about
           %h2 About
         .about_detail
           .about_detail_item1
@@ -106,12 +121,17 @@
               .about_detail_item1_skill_title
                 %p Skill set
               .about_detail_item1_skill_image
+                %i.fas.fa-laptop.fa-7x
               .about_detail_item1_skill_info
+                %p サーバーサイド：Ruby on Rails
+                %p フロントサイド：HTML, CSS, JavaScript
             .about_detail_item1_time
               .about_detail_item1_time_title
                 %p Creation time
               .about_detail_item1_time_image
+                %i.fa.fa-calendar.fa-7x
               .about_detail_item1_time_info
+                %p 3ヶ月
           .about_detail_item2
             .about_detail_item2_title
               %p About
@@ -123,10 +143,15 @@
               .about_detail_item3_people_title
                 %p Number of people
               .about_detail_item3_people_image
+                %i.fas.fa-users.fa-7x
               .about_detail_item3_people_info
+                %p 1名
             .about_detail_item3_info
               .about_detail_item3_info_title
                 %p Public information
               .about_detail_item3_info_image
+                %i.fab.fa-github.fa-7x
               .about_detail_item3_info_info
+                =link_to "https://github.com/konno88/blogapp-konnon", "https://github.com/konno88/blogapp-konnon"
+                =link_to "https://blogapp-konnon-test.herokuapp.com", "https://blogapp-konnon-test.herokuapp.com"
     = yield
